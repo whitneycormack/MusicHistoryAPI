@@ -10,8 +10,8 @@
 
 ## Installation
 
-1. Clone the project into a local folder - `git clone git@github.com:whitneycormack/MusicHistoryAPI.git`
-2. Navigate into the newly created directory - `cd mh_api`
+1. Clone the project into a local folder - `git clone git@github.com:whitneycormack/mhdjango.git`
+2. Navigate into the newly created directory - `cd mhdjango`
 3. Make migrations to build the database - `python manage.py makemigrations`
 4. Run `python manage.py migrate`
 5. Create a superuser - `python manage.py createsuperuser` and complete the prompted fields with your information
