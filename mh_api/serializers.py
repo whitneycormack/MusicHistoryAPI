@@ -32,8 +32,8 @@ class AlbumSerializer(serializers.HyperlinkedModelSerializer):
         'album_release_date',
         'album_length',
         'label',
-        'artist_name',
-        'genre_type',
+        'artist',
+        'genre',
       )
 
 class ArtistSerializer(serializers.HyperlinkedModelSerializer):
@@ -56,9 +56,9 @@ class SongSerializer(serializers.HyperlinkedModelSerializer):
         'song_title',
         'song_length',
         'song_release_date',
-        'genre_type',
-        'artist_name',
-        'album_title',
+        'song_genre',
+        'song_artist',
+        'album',
       )
 
 

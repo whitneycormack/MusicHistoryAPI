@@ -27,7 +27,7 @@ class Album(models.Model):
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
 
     def __str__(self):
-      return 'Album Title: %s, Album Release Date: %s, Album Length: %s, Label: %s, Artist Name: %s, Genre: %s' % (self.album_title, self.album_release_date, self.album_length, self.label, self.artist_name, self.genre_type)
+      return 'Album Title: %s, Album Release Date: %s, Album Length: %s, Label: %s, Artist Name: %s, Genre: %s' % (self.album_title, self.album_release_date, self.album_length, self.label, self.artist, self.genre)
 
 
 class Song(models.Model):
@@ -39,7 +39,7 @@ class Song(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
 
     def __str__(self):
-      return 'Song Title: %s, Song Length: %s, Song Release Date: %s, Genre: %s, Artist: %s, Album Title: %s' % (self.song_title, self.song_length, self.song_release_date, self.genre_type, self.artist_name, self.album_title)
+      return 'Song Title: %s, Song Length: %s, Song Release Date: %s, Genre: %s, Artist: %s, Album Title: %s' % (self.song_title, self.song_length, self.song_release_date, self.song_genre, self.song_artist, self.album)
 
 
 
